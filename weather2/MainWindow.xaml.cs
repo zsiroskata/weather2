@@ -32,5 +32,13 @@ namespace weather2
 				MessageBox.Show("írjál valamit be");
 			}
         }
+
+		private void torles_click(object sender, RoutedEventArgs e)
+		{
+			if (list.SelectedItem != null)
+			{
+				list.Items.Remove(list.SelectedItem);
+			}
+		}
 	}
 }

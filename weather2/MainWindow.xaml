@@ -7,9 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="list" HorizontalAlignment="Left" Height="160" Margin="32,29,0,0" VerticalAlignment="Top" Width="193" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="White" Background="#FFDDFBFA"/>
+        <ListBox x:Name="list" HorizontalAlignment="Left" Height="135" Margin="32,54,0,0" VerticalAlignment="Top" Width="193" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="White" Background="#FFDDFBFA"/>
         <Button x:Name="addButton" Content="Hozzáadás" HorizontalAlignment="Left" Height="50" Margin="262,84,0,0" VerticalAlignment="Top" Width="138" Click="hozzaad_click" Background="#FF94F59A"/>
-        <TextBox x:Name="txtBox" TextWrapping="Wrap" Margin="262,29,400,360" Background="#FFE4E4E4" Foreground="Black"/>
+        <TextBox x:Name="txtBox" TextWrapping="Wrap" Margin="262,29,400,355" Background="#FFE4E4E4" Foreground="Black"/>
+        <Button x:Name="delet" Content="Törlés" HorizontalAlignment="Left" Height="50" Margin="262,139,0,0" VerticalAlignment="Top" Width="138" Click="torles_click" Background="#FFF59494"/>
+        <Label Content="Városok" HorizontalAlignment="Left" Height="37" Margin="30,10,0,0" VerticalAlignment="Top" Width="195" HorizontalContentAlignment="Center" FontSize="20" Background="#FFDBFEFF"/>
+        <Label Content="Hőmérésklet" HorizontalAlignment="Left" Height="37" Margin="30,230,0,0" VerticalAlignment="Top" Width="195" HorizontalContentAlignment="Center" FontSize="20" Background="#FFFFDBFF"/>
+        <Label Content="Páratartalom" HorizontalAlignment="Left" Height="37" Margin="287,230,0,0" VerticalAlignment="Top" Width="195" HorizontalContentAlignment="Center" FontSize="20" Background="#FFFFDBFF"/>
+        <Label Content="Szélsebesség" HorizontalAlignment="Left" Height="37" Margin="528,230,0,0" VerticalAlignment="Top" Width="195" HorizontalContentAlignment="Center" FontSize="20" Background="#FFFFDBFF"/>
 
     </Grid>
 </Window>
