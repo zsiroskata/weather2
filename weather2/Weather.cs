@@ -8,6 +8,6 @@ namespace weather2
 {
 	internal class Weather
 	{
-		
+		public string Varos { get; set; }
 	}
 }
