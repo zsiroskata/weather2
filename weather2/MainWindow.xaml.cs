@@ -43,9 +43,11 @@ namespace weather2
             if (txtBox.Text != "" && txtBoxH.Text != "" && txtBoxP.Text != "")
             {
 				list.Items.Add(txtBox.Text);
+				/*
 				varosok.Add(new Weather(txtBox.Text));
 				varosok.Add(new Weather(txtBoxH.Text ));
 				varosok.Add(new Weather(txtBoxP.Text ));
+				*/
             }
 			else
 			{
