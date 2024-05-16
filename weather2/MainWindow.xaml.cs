@@ -43,13 +43,10 @@ namespace weather2
             if (txtBox.Text != "" && txtBoxH.Text != "" && txtBoxP.Text != "")
             {
 				list.Items.Add(txtBox.Text);
-				/*
-				varosok.Add(new Weather(txtBox.Text));
-				varosok.Add(new Weather(txtBoxH.Text ));
-				varosok.Add(new Weather(txtBoxP.Text ));
-				*/
+			
+				varosok.Add(new Weather(txtBox.Text + ";" + txtBoxH.Text + ";" + txtBoxP.Text + ";" + txtBoxSz.Text));
             }
-			else
+            else
 			{
 				MessageBox.Show("valamelyik adat hiányzik");
 			}
@@ -65,12 +62,13 @@ namespace weather2
 
         private void list_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            int index = 0;
             if (list.SelectedItem != null)
 			{
-				int index = list.SelectedIndex;
+				index = list.SelectedIndex;
                 homersekletLabel.Content = varosok[index].Homerseklet + "°C";
 				paratartalomLabel.Content = varosok[index].Paratartalom + "%";
-               
+                szelsebessegLabel.Content = varosok[index].Szelsebesseg + "km/h";
 
             }
         }
